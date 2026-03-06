@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shopodoo</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f6f6f6;
+color:#222;
+}
+
+/* NAVBAR */
+
+header{
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+margin-left:25px;
+font-weight:500;
+}
+
+/* HERO SLIDER */
+
+.slider{
+width:100%;
+height:520px;
+overflow:hidden;
+position:relative;
+}
+
+.slides{
+display:flex;
+width:300%;
+height:100%;
+animation:slide 12s infinite;
+}
+
+.slide{
+width:100%;
+flex-shrink:0;
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.slide h1{
+color:white;
+font-size:55px;
+background:rgba(0,0,0,0.4);
+padding:20px 40px;
+border-radius:5px;
+}
+
+.slide1{
+background-image:url("https://images.unsplash.com/photo-1523381210434-271e8be1f52b");
+}
+
+.slide2{
+background-image:url("https://images.unsplash.com/photo-1483985988355-763728e1935b");
+}
+
+.slide3{
+background-image:url("https://images.unsplash.com/photo-1441986300917-64674bd600d8");
+}
+
+@keyframes slide{
+
+0%{margin-left:0;}
+30%{margin-left:0;}
+
+35%{margin-left:-100%;}
+65%{margin-left:-100%;}
+
+70%{margin-left:-200%;}
+100%{margin-left:-200%;}
+
+}
+
+/* SECTION */
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:70px 20px;
+}
+
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.product{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.product:hover{
+transform:translateY(-6px);
+}
+
+.product img{
+width:100%;
+height:280px;
+object-fit:cover;
+}
+
+.product-info{
+padding:20px;
+text-align:center;
+}
+
+.product-info h3{
+margin-bottom:10px;
+}
+
+.price{
+font-weight:bold;
+margin:10px 0;
+}
+
+button{
+background:#111;
+color:white;
+border:none;
+padding:10px 20px;
+cursor:pointer;
+border-radius:4px;
+}
+
+/* ABOUT */
+
+.about{
+background:white;
+padding:50px;
+border-radius:10px;
+line-height:1.7;
+box-shadow:0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* FOOTER */
+
+footer{
+margin-top:60px;
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav>
+
+<div class="logo">Shopodoo</div>
+
+<div>
+<a href="index.html">Home</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</nav>
+
+</header>
+
+
+
+<!-- HERO SLIDER -->
+
+<div class="slider">
+
+<div class="slides">
+
+<div class="slide slide1">
+<h1>Modern Fashion</h1>
+</div>
+
+<div class="slide slide2">
+<h1>New Collection</h1>
+</div>
+
+<div class="slide slide3">
+<h1>Minimal Style</h1>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCTS -->
+
+<div class="container">
+
+<h2>Featured Collection</h2>
+
+<div class="products">
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+
+<div class="product-info">
+
+<h3>Classic White T-Shirt</h3>
+<p class="price">$25</p>
+<button>Buy Now</button>
+
+</div>
+
+</div>
+
+
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1542060748-10c28b62716f">
+
+<div class="product-info">
+
+<h3>Black Street Hoodie</h3>
+<p class="price">$45</p>
+<button>Buy Now</button>
+
+</div>
+
+</div>
+
+
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1516826957135-700dedea698c">
+
+<div class="product-info">
+
+<h3>Denim Jacket</h3>
+<p class="price">$70</p>
+<button>Buy Now</button>
+
+</div>
+
+</div>
+
+
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1520975916090-3105956dac38">
+
+<div class="product-info">
+
+<h3>Minimal Sneakers</h3>
+<p class="price">$80</p>
+<button>Buy Now</button>
+
+</div>
+
+</div>
+
+
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f">
+
+<div class="product-info">
+
+<h3>Casual Shirt</h3>
+<p class="price">$40</p>
+<button>Buy Now</button>
+
+</div>
+
+</div>
+
+
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d">
+
+<div class="product-info">
+
+<h3>Winter Coat</h3>
+<p class="price">$120</p>
+<button>Buy Now</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- ABOUT -->
+
+<div class="container">
+
+<div class="about">
+
+<h2>About Shopodoo</h2>
+
+<p>
+Shopodoo is a simple fashion store designed to showcase modern clothing products in a clean and minimal way.
+</p>
+
+<p>
+The project demonstrates how an online store can present products beautifully with a modern interface, helping brands display their collections in an elegant and user-friendly design.
+</p>
+
+</div>
+
+</div>
+
+
+
+<footer>
+
+© 2026 Shopodoo — Minimal Clothing Store
+
+</footer>
+
+
+</body>
+</html>
